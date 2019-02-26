@@ -1,0 +1,29 @@
+<footer class="row middle-xs center-xs">
+  <div class="container">
+    {{ with .Site.Params.social }}
+    <ul class="row middle-xs center-xs">
+      {{ range sort .}}
+      {{ if .icon }}
+      <li class="col-xs">
+	<a href="{{ .url }}" rel="noopener noreferrer" aria-label="{{ .name }}">
+          <i class="{{ .icon }}" aria-hidden></i>
+	</a>
+      </li>
+      {{ else }}
+      <li class="col-xs">
+	<a href="{{ .url }}" rel="noopener noreferrer" aria-label="{{ .name }}">{{ .name }}</a>
+      </li>
+      {{ end }}
+      {{ end }}
+    </ul>
+    {{ end }}
+
+    {{ if (.Site.Params.copyright) }}
+    <div class="col-xs-12">
+      {{ if .Site.Params.copyright }}
+      Copyright &copy; {{ now.Format "2006" }} {{ .Site.Params.Author }}.
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</footer>
