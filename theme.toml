@@ -1,9 +1,9 @@
 # theme.toml
 name = "Raptor"
 license = "MIT"
-licenselink = "https://github.com/techquila/hugo-raptor/blob/master/LICENSE"
+licenselink = "https://github.com/techquila/raptor/blob/master/LICENSE"
 description = "A modern responsive theme for sites made with the hugo static site generator"
-homepage = "https://sod.oscarfono.com/work/go-raptor/"
+homepage = "https://github.com/techquila/raptor/"
 tags = ["hugo", "golang", "sass", "scss", "responsive", "minimal", "coder", "blogger", "portfolio"]
 features = []
 min_version = "0.54.0"
