@@ -6,7 +6,7 @@ description = "A modern responsive theme for sites made with the hugo static sit
 homepage = "https://github.com/techquila/raptor/"
 tags = ["hugo", "golang", "sass", "scss", "responsive", "minimal", "coder", "blogger", "portfolio"]
 features = []
-min_version = "0.54.0"
+min_version = "0.49.0"
 
 [author]
   name = "Sod Oscarfono"
