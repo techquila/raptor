@@ -2,7 +2,15 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/golang
+      - image: cibuilds/hugo:latest
+
+    working_directory: ~/hugo
+
+    environment:
+      HUGO_BUILD_DIR: ~/hugo/public
+
     steps:
+      - run: apk update && apk add git
       - checkout
-      - run: apt-get update && apt-get install hugo
+      - run: git submodule sync && git submodule update --init
+      - run: echo 'theme = "raptor"' >> config.toml
